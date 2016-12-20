@@ -1,14 +1,18 @@
 # ConcurrentCalculator
 
 Handcrafted version of elixir gen_server. It shows how tail recursion can be used to created process which runs forever.
-It is simple stateful calculator where we can fire off requests to add substract, multiply and divide in parallel.
+
+It is also show how state can be maintained in a process.
+
+What it does ?
+It is a simple stateful calculator where we can fire off requests to add substract, multiply and divide in parallel.
 
 Code is well commented.
 
 iex -S mix
 
 iex(1)> pid = ConcurrentCalculator.start
-#PID<0.117.0>
+PID<0.117.0>
 iex(2)> ConcurrentCalculator.value(pid)
 0
 iex(3)> ConcurrentCalculator.add(pid,2)
