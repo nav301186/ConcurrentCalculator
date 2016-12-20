@@ -2,7 +2,7 @@
 
 Handcrafted version of elixir gen_server. It shows how tail recursion can be used to created process which runs forever.
 
-It is also show how state can be maintained in a process.
+It also shows how state can be maintained in a process.
 
 What it does ?
 It is a simple stateful calculator where we can fire off requests to add substract, multiply and divide in parallel.
