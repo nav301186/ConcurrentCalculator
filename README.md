@@ -13,16 +13,20 @@ iex -S mix
 
 iex(1)> pid = ConcurrentCalculator.start
 PID<0.117.0>
+
 iex(2)> ConcurrentCalculator.value(pid)
 0
 iex(3)> ConcurrentCalculator.add(pid,2)
 {:add, 2}
+
 iex(4)> ConcurrentCalculator.mul(pid,2)
 {:mul, 2}
+
 iex(5)> ConcurrentCalculator.value(pid)
 4
+
 iex(6)> ConcurrentCalculator.mul(pid,8)
 {:mul, 8}
+
 iex(7)> ConcurrentCalculator.value(pid)
 32
-iex(8)>
